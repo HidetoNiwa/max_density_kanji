@@ -71,7 +71,7 @@ w = bbox[2] - bbox[0]
 h = bbox[3] - bbox[1]
 draw.text(((image_size[0] - w) / 2, (image_size[1] - h) / 2), max_density_char, fill="black", font=font)
 
-image.show()
+image.save('./max_denity_char.png')
 
 print(f"U+{max_density_code:04X} {max_density_char} {max_density_name}")
 print(f"密度（黒の割合）：{max_density:.4f}")              
